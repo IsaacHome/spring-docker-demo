@@ -18,6 +18,7 @@ public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @GetMapping("/create")
     public String  createEmployee(){
         Arrays.asList(new Employee("Thaw Thaw","HR",300000),
                 new Employee("Thaw Thaw","HR",200000),
